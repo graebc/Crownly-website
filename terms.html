@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzungsbedingungen – Crownly</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta name="theme-color" content="#0F172A">
+    <meta name="description" content="Crownly – Master of Logic. Ein Puzzle-Spiel für iOS.">
+    <meta property="og:title" content="Crownly – Master of Logic">
+    <meta property="og:description" content="Logik-Puzzle für iOS. Platziere Figuren auf einem farbigen Spielfeld.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="favicon-192.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+            background: #0F172A; color: #CBD5E1; line-height: 1.7; min-height: 100vh;
+        }
+        .container { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
+        .back {
+            display: inline-flex; align-items: center; gap: 6px; color: #64748B;
+            text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 32px;
+        }
+        .back:hover { color: #F1F5F9; }
+        h1 { font-size: 24px; font-weight: 900; margin-bottom: 8px; color: #F1F5F9; }
+        .updated { color: #64748B; font-size: 13px; margin-bottom: 32px; }
+        .intro { font-size: 15px; margin-bottom: 32px; color: #94A3B8; }
+        h2 { font-size: 17px; font-weight: 800; margin: 32px 0 12px; color: #F1F5F9; }
+        p, li { font-size: 15px; margin-bottom: 12px; color: #CBD5E1; }
+        ul { padding-left: 20px; margin-bottom: 16px; }
+        li { margin-bottom: 6px; }
+        a { color: #FBBF24; }
+        strong { color: #F1F5F9; }
+        .lang-toggle { display: inline-flex; gap: 8px; margin-bottom: 24px; }
+        .lang-toggle a {
+            padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 700;
+            text-decoration: none; color: #64748B; background: #1E293B;
+            border: 1px solid rgba(241,245,249,0.06);
+        }
+        .lang-toggle a.active { background: #F1F5F9; color: #0F172A; }
+        .section-de, .section-en { display: none; }
+        .section-de.visible, .section-en.visible { display: block; }
+        .placeholder {
+            background: rgba(251,191,36,0.15); color: #FBBF24;
+            padding: 2px 8px; border-radius: 4px; font-size: 13px; font-weight: 600;
+        }
+        .hint {
+            margin-top: 40px; padding: 16px; background: rgba(251,191,36,0.1);
+            border-radius: 12px; font-size: 13px; color: #FBBF24;
+            border: 1px solid rgba(251,191,36,0.2);
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">‹ Zurück</a>
+        <div class="lang-toggle">
+            <a href="#" id="btn-de" class="active" onclick="switchLang('de');return false;">Deutsch</a>
+            <a href="#" id="btn-en" onclick="switchLang('en');return false;">English</a>
+        </div>
+        <div class="section-de visible" id="content-de">
+            <h1>Nutzungsbedingungen</h1>
+            <p class="updated">Stand: Mai 2025</p>
+            <p class="intro">Durch die Nutzung von Crownly – Master of Logic („die App") erklären Sie sich mit den folgenden Bedingungen einverstanden.</p>
+            <h2>1. Erlaubte Nutzung</h2>
+            <p>Die App ist ausschließlich für den persönlichen, nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung, Weiterverbreitung oder kommerzielle Nutzung ist ohne ausdrückliche Genehmigung untersagt.</p>
+            <h2>2. Geistiges Eigentum</h2>
+            <p>Alle Inhalte der App, einschließlich Design, Grafiken, Code und Texte, sind urheberrechtlich geschützt.</p>
+            <h2>3. Verfügbarkeit</h2>
+            <p>Die App wird in ihrer aktuellen Form bereitgestellt. Es besteht kein Anspruch auf ständige Verfügbarkeit, bestimmte Funktionen oder Updates.</p>
+            <h2>4. Haftungsausschluss</h2>
+            <p>Die App wird „wie besehen" bereitgestellt. Es wird keine Gewährleistung für Fehlerfreiheit, Vollständigkeit oder Eignung für bestimmte Zwecke übernommen.</p>
+            <h2>5. Datenschutz</h2>
+            <p>Informationen zum Umgang mit Daten finden Sie in unserer <a href="privacy.html">Datenschutzerklärung</a>.</p>
+            <h2>6. Änderungen</h2>
+            <p>Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Die fortgesetzte Nutzung der App nach Änderungen gilt als Zustimmung.</p>
+            <h2>7. Anwendbares Recht</h2>
+            <p>Es gilt das Recht der Bundesrepublik Deutschland.</p>
+        </div>
+        <div class="section-en" id="content-en">
+            <h1>Terms of Service</h1>
+            <p class="updated">Last updated: May 2025</p>
+            <p class="intro">By using Crownly – Master of Logic ("the App"), you agree to the following terms.</p>
+            <h2>1. Permitted Use</h2>
+            <p>The App is intended exclusively for personal, non-commercial use. Any reproduction, redistribution, or commercial use without express permission is prohibited.</p>
+            <h2>2. Intellectual Property</h2>
+            <p>All content of the App, including design, graphics, code, and text, is protected by copyright.</p>
+            <h2>3. Availability</h2>
+            <p>The App is provided in its current form. There is no guarantee of constant availability, specific features, or updates.</p>
+            <h2>4. Disclaimer</h2>
+            <p>The App is provided "as is". No warranty is given for accuracy, completeness, or fitness for a particular purpose.</p>
+            <h2>5. Privacy</h2>
+            <p>Information about data handling can be found in our <a href="privacy.html">Privacy Policy</a>.</p>
+            <h2>6. Changes</h2>
+            <p>We reserve the right to modify these terms at any time. Continued use of the App after changes constitutes acceptance.</p>
+            <h2>7. Governing Law</h2>
+            <p>The laws of the Federal Republic of Germany shall apply.</p>
+        </div>
+    </div>
+    
+    <script>
+        function switchLang(lang) {
+            document.getElementById("content-de").classList.toggle("visible", lang === "de");
+            document.getElementById("content-en").classList.toggle("visible", lang === "en");
+            document.getElementById("btn-de").classList.toggle("active", lang === "de");
+            document.getElementById("btn-en").classList.toggle("active", lang === "en");
+        }
+    </script>
+
+
+    <script>
+        if (window.location.hash === '#en') { switchLang('en'); }
+    </script>
+</body>
+</html>
