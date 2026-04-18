@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutzungsbedingungen – Crownly</title>
+    <style>
+        :root { --navy: #0F172A; --gold: #FBBF24; --slate: #64748B; --light: #F8FAFC; --card: #FFFFFF; }
+        @media (prefers-color-scheme: dark) {
+            :root { --light: #0F172A; --card: #1E293B; --navy: #F1F5F9; --slate: #94A3B8; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; background: var(--light); color: var(--navy); line-height: 1.7; }
+        .container { max-width: 640px; margin: 0 auto; padding: 40px 24px 80px; }
+        .back { display: inline-flex; align-items: center; gap: 6px; color: var(--slate); text-decoration: none; font-size: 14px; font-weight: 600; margin-bottom: 32px; }
+        .back:hover { color: var(--navy); }
+        h1 { font-size: 24px; font-weight: 900; margin-bottom: 8px; }
+        .updated { color: var(--slate); font-size: 13px; margin-bottom: 32px; }
+        .intro { font-size: 15px; margin-bottom: 32px; color: var(--slate); }
+        h2 { font-size: 18px; font-weight: 800; margin: 32px 0 12px; }
+        p { font-size: 15px; margin-bottom: 12px; }
+        .lang-toggle { display: inline-flex; gap: 8px; margin-bottom: 24px; }
+        .lang-toggle a { padding: 6px 14px; border-radius: 8px; font-size: 13px; font-weight: 700; text-decoration: none; color: var(--slate); background: var(--card); border: 1px solid rgba(100,116,139,0.15); }
+        .lang-toggle a.active { background: var(--navy); color: var(--light); }
+        .section-de, .section-en { display: none; }
+        .section-de.visible, .section-en.visible { display: block; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back">‹ Zurück</a>
+
+        <div class="lang-toggle">
+            <a href="#" id="btn-de" class="active" onclick="switchLang('de');return false;">Deutsch</a>
+            <a href="#" id="btn-en" onclick="switchLang('en');return false;">English</a>
+        </div>
+
+        <!-- DEUTSCH -->
+        <div class="section-de visible" id="content-de">
+            <h1>Nutzungsbedingungen</h1>
+            <p class="updated">Stand: Mai 2025</p>
+            <p class="intro">Durch die Nutzung von Crownly – Master of Logic („die App") erklären Sie sich mit den folgenden Bedingungen einverstanden.</p>
+
+            <h2>1. Erlaubte Nutzung</h2>
+            <p>Die App ist ausschließlich für den persönlichen, nicht-kommerziellen Gebrauch bestimmt. Jegliche Vervielfältigung, Weiterverbreitung oder kommerzielle Nutzung ist ohne ausdrückliche Genehmigung untersagt.</p>
+
+            <h2>2. Geistiges Eigentum</h2>
+            <p>Alle Inhalte der App, einschließlich Design, Grafiken, Code und Texte, sind urheberrechtlich geschützt. Die Nutzung der App gewährt keine Rechte an diesen Inhalten über den persönlichen Gebrauch hinaus.</p>
+
+            <h2>3. Verfügbarkeit</h2>
+            <p>Die App wird in ihrer aktuellen Form bereitgestellt. Es besteht kein Anspruch auf ständige Verfügbarkeit, bestimmte Funktionen oder Updates.</p>
+
+            <h2>4. Haftungsausschluss</h2>
+            <p>Die App wird „wie besehen" bereitgestellt. Es wird keine Gewährleistung für Fehlerfreiheit, Vollständigkeit oder Eignung für bestimmte Zwecke übernommen. Die Nutzung erfolgt auf eigene Verantwortung.</p>
+
+            <h2>5. Datenschutz</h2>
+            <p>Informationen zum Umgang mit Daten finden Sie in unserer <a href="privacy.html">Datenschutzerklärung</a>.</p>
+
+            <h2>6. Änderungen</h2>
+            <p>Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Die jeweils aktuelle Fassung ist auf dieser Seite abrufbar. Die fortgesetzte Nutzung der App nach Änderungen gilt als Zustimmung.</p>
+
+            <h2>7. Anwendbares Recht</h2>
+            <p>Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz des Anbieters.</p>
+        </div>
+
+        <!-- ENGLISH -->
+        <div class="section-en" id="content-en">
+            <h1>Terms of Service</h1>
+            <p class="updated">Last updated: May 2025</p>
+            <p class="intro">By using Crownly – Master of Logic ("the App"), you agree to the following terms.</p>
+
+            <h2>1. Permitted Use</h2>
+            <p>The App is intended exclusively for personal, non-commercial use. Any reproduction, redistribution, or commercial use without express permission is prohibited.</p>
+
+            <h2>2. Intellectual Property</h2>
+            <p>All content of the App, including design, graphics, code, and text, is protected by copyright. Use of the App does not grant any rights to these contents beyond personal use.</p>
+
+            <h2>3. Availability</h2>
+            <p>The App is provided in its current form. There is no guarantee of constant availability, specific features, or updates.</p>
+
+            <h2>4. Disclaimer</h2>
+            <p>The App is provided "as is". No warranty is given for accuracy, completeness, or fitness for a particular purpose. Use is at your own risk.</p>
+
+            <h2>5. Privacy</h2>
+            <p>Information about data handling can be found in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+            <h2>6. Changes</h2>
+            <p>We reserve the right to modify these terms at any time. The current version is always available on this page. Continued use of the App after changes constitutes acceptance.</p>
+
+            <h2>7. Governing Law</h2>
+            <p>The laws of the Federal Republic of Germany shall apply. The place of jurisdiction is, to the extent permitted by law, the registered office of the provider.</p>
+        </div>
+    </div>
+
+    <script>
+        function switchLang(lang) {
+            document.getElementById('content-de').classList.toggle('visible', lang === 'de');
+            document.getElementById('content-en').classList.toggle('visible', lang === 'en');
+            document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+</body>
+</html>

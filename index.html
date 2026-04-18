@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crownly – Master of Logic</title>
+    <style>
+        :root { --navy: #0F172A; --gold: #FBBF24; --slate: #64748B; --light: #F8FAFC; --card: #FFFFFF; }
+        @media (prefers-color-scheme: dark) {
+            :root { --light: #0F172A; --card: #1E293B; --navy: #F1F5F9; --slate: #94A3B8; }
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif; background: var(--light); color: var(--navy); line-height: 1.6; }
+        .container { max-width: 640px; margin: 0 auto; padding: 60px 24px; }
+        .logo { font-size: 48px; margin-bottom: 8px; }
+        h1 { font-size: 28px; font-weight: 900; margin-bottom: 4px; }
+        .subtitle { color: var(--slate); font-size: 14px; font-weight: 600; margin-bottom: 48px; }
+        .links { display: flex; flex-direction: column; gap: 12px; }
+        .links a {
+            display: flex; align-items: center; gap: 12px;
+            padding: 20px 24px; background: var(--card); border-radius: 16px;
+            text-decoration: none; color: var(--navy); font-weight: 700; font-size: 16px;
+            border: 1px solid rgba(100,116,139,0.15); transition: transform 0.15s;
+        }
+        .links a:hover { transform: translateY(-2px); }
+        .links .icon { font-size: 20px; width: 32px; text-align: center; }
+        .links .arrow { margin-left: auto; color: var(--slate); font-size: 18px; }
+        footer { margin-top: 60px; text-align: center; color: var(--slate); font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">👑</div>
+        <h1>Crownly</h1>
+        <p class="subtitle">Master of Logic</p>
+
+        <div class="links">
+            <a href="privacy.html">
+                <span class="icon">🔒</span>
+                Datenschutzerklärung
+                <span class="arrow">›</span>
+            </a>
+            <a href="terms.html">
+                <span class="icon">📄</span>
+                Nutzungsbedingungen
+                <span class="arrow">›</span>
+            </a>
+            <a href="imprint.html">
+                <span class="icon">ℹ️</span>
+                Impressum
+                <span class="arrow">›</span>
+            </a>
+        </div>
+
+        <footer>
+            <p>© 2025 Crownly. Alle Rechte vorbehalten.</p>
+        </footer>
+    </div>
+</body>
+</html>
